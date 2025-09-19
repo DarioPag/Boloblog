@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+  <div class="pt-20 max-w-7xl mx-auto px-4 flex flex-col gap-8">
+
+    <!-- Create Post Card -->
+    <div class="bg-white shadow-lg rounded-xl p-6 max-w-2xl mx-auto w-full">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Create a post</h2>
+
+      <!-- Textarea -->
+      <textarea placeholder="What's on your mind?"
+        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
+        rows="4"></textarea>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap items-center justify-between mt-4 gap-2">
+        <!-- Attach -->
+        <div class="flex gap-3">
+          <button class="flex items-center gap-2 text-gray-600 hover:text-purple-500 transition">
+            <i class="fa-solid fa-image"></i>
+            <span class="hidden sm:inline">Photo</span>
+          </button>
+        </div>
+
+        <!-- Publish -->
+        <button class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600 transition">
+          Post
+        </button>
+      </div>
+    </div>
+
+    <!-- Posts Feed -->
+    <div class="max-w-2xl mx-auto w-full flex flex-col gap-6">
+      <post-card hashtag="#WorldCup"
+        text="The stadium is getting ready for an epic match tonight ⚽🔥"
+        img="/assets/estadio.jpg"></post-card>
+
+      <post-card hashtag="#TeamSpirit"
+        text="Fans are louder than ever 🎶🙌 The energy is unmatched!"></post-card>
+
+      <post-card hashtag="#Goal"
+        text="An incredible goal was just scored 🚀🥅 Pure magic!"
+        img="/assets/estadio.jpg"></post-card>
+
+      <post-card hashtag="#FansFirst"
+        text="The community is what makes soccer so special 💜🤝"></post-card>
+
+      <post-card hashtag="#FinalMatch"
+        text="The final whistle is coming... Who will take the trophy? 🏆"
+        img="/assets/estadio.jpg"></post-card>
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>
