@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Moderno</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            <i class="fa-solid fa-futbol text-purple-500"></i>
+            SoccerHub
+          </a>
+        </div>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#" class="text-gray-700 hover:text-purple-500 flex items-center gap-1"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" class="text-gray-700 hover:text-purple-500 flex items-center gap-1"><i class="fa-solid fa-trophy"></i> World Cups</a>
+          <a href="#" class="text-gray-700 hover:text-purple-500 flex items-center gap-1"><i class="fa-solid fa-users"></i> Teams</a>
+          <a href="#" class="text-gray-700 hover:text-purple-500 flex items-center gap-1"><i class="fa-solid fa-info-circle"></i> About</a>
+        </div>
+
+        <!-- Login & Register Buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <button class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition">Login</button>
+          <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition">Register</button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200 flex items-center gap-2"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200 flex items-center gap-2"><i class="fa-solid fa-trophy"></i> World Cups</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200 flex items-center gap-2"><i class="fa-solid fa-users"></i> Teams</a>
+      <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200 flex items-center gap-2"><i class="fa-solid fa-info-circle"></i> About</a>
+      <button class="w-full text-left px-4 py-2 bg-purple-500 text-white rounded mt-2 hover:bg-purple-600 transition">Login</button>
+      <button class="w-full text-left px-4 py-2 bg-gray-200 text-gray-800 rounded mt-2 hover:bg-gray-300 transition">Register</button>
+    </div>
+  </nav>
+
+  <!-- Content Placeholder -->
+  
+
+  <!-- Script para menú móvil -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
